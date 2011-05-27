@@ -190,7 +190,7 @@ function scrape(doc) {
 				newItem.callNumber = callNumber.nodeValue;
 			}
 
-			newItem.libraryCatalog = "IRIS";
+			newItem.libraryCatalog = "ALEXANDRIA";
 			newItem.complete();
 			//Zotero.debug('hi');
 			return true;
@@ -352,7 +352,7 @@ function scrape(doc) {
 					var newItem = new Zotero.Item();
 					record.translate(newItem);
 					
-					newItem.libraryCatalog = "IRIS";
+					newItem.libraryCatalog = "ALEXANDRIA";
 					newItem.complete();
 				}//end FOR
 			Zotero.done();
